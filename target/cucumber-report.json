@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 212194478,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpringDefinitions.initTests()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Deposit action",
+        "description": "",
+        "id": "bank-ops;deposit-action",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3291904,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "a bank client with id 1 has 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "1000",
+                  "offset": 28
+                }
+              ],
+              "location": "SpringDefinitions.account_with_id_has(long,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 430879,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "make an operation \"DEPOSIT\" of 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DEPOSIT\"",
+                  "offset": 18
+                },
+                {
+                  "val": "500",
+                  "offset": 31
+                }
+              ],
+              "location": "SpringDefinitions.make_an_operation_of(String,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68886,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Account has 1500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1500",
+                  "offset": 12
+                }
+              ],
+              "location": "SpringDefinitions.account_has(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1115544,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpringDefinitions.initTests()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Withdrawal action",
+        "description": "",
+        "id": "bank-ops;withdrawal-action",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214472,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a bank client with id 1 has 1800",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "1800",
+                  "offset": 28
+                }
+              ],
+              "location": "SpringDefinitions.account_with_id_has(long,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 431948,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "make an operation \"WITHDRAWAL\" of 600",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WITHDRAWAL\"",
+                  "offset": 18
+                },
+                {
+                  "val": "600",
+                  "offset": 34
+                }
+              ],
+              "location": "SpringDefinitions.make_an_operation_of(String,Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Account has 1200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1200",
+                  "offset": 12
+                }
+              ],
+              "location": "SpringDefinitions.account_has(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 874464,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SpringDefinitions.initTests()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Display history of operations",
+        "description": "",
+        "id": "bank-ops;display-history-of-operations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32642296,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "a bank client with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                }
+              ],
+              "location": "SpringDefinitions.a_bank_client_with_id(Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197697,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the display has 4 operations",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 16
+                }
+              ],
+              "location": "SpringDefinitions.the_display_has_operations(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Bank ops",
+    "description": "",
+    "id": "bank-ops",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/BankingUS.feature",
+    "tags": []
+  }
+]
